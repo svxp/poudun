@@ -1,0 +1,172 @@
+	
+@charset "utf-8";
+
+body,div,span,h1,h2,h3,h4,h5,h6,p,em,img,strong,b,small,u,i,center,dl,dt,dd,ol,
+ul,li,sub,sup,tt,var,del,dfn,ins,kbd,q,s,samp,strike,applet,object,iframe,fieldset,
+form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,
+blockquote,pre,a,abbr,acronym,address,big,cite,code,mark,audio,video,input,textarea,select{
+	margin:0; 
+	padding:0;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+*{	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+
+
+a {
+	text-decoration:none;
+	outline:none;
+	color: #666;
+}
+a:hover {
+	color: #000;
+}
+img {	
+	border: 0;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+a:focus {
+	outline: none;
+}
+
+
+
+html {
+	overflow-x:hidden;
+	-webkit-text-size-adjust:none;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family:arial,"微软雅黑";
+	background: #fff;
+	font-size: 14px;
+	color: #666;
+	min-width: 1300px;
+  	margin-left: auto;
+ 	margin-right: auto;
+	overflow-x: hidden;
+}
+	
+	
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+	
+input[type='reset'],
+input[type='button'],
+input[type='submit'],
+input[type='radio'],
+input[type='submit'] {	
+	cursor: pointer; 
+	border: 0;
+	outline: none;	 
+	-webkit-appearance: none;
+}
+	
+input[type='checkbox'],
+input[type='radio'] { 
+	position: relative;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-bottom:1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	-webkit-appearance: none;
+}
+	
+textarea,
+input[type='email'],
+input[type='date'],
+input[type='password'],
+input[type='text'] 	{	
+	padding: 0px;
+	color: #666;
+	font-size: 12px;
+	outline: none;
+	font-family: "微软雅黑";
+	-webkit-appearance: none;
+}
+	
+
+.gray_bg{
+	background-color: #f8f8f8;
+}	
+.white_bg{
+	background-color: #fff;
+}	
+.white{
+	color: #fff;
+}
+.black{
+	color: #000;
+}
+.fl {	
+	float: left;
+}
+.fr {	
+	float: right;
+}
+.clearfix {
+	 clear: both;
+}
+.clearfix:after {	
+	clear: both;
+	height: 0;
+	content: "";
+	line-height: 0;
+	font-size: 0;
+	display: block;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.radius{
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.p_top{
+	padding-top: 100px;
+}
+
+.rel{
+	position: relative;
+}
+
+.overflow-text{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.container{
+	width: 1400px;
+	margin: 0 auto;
+}
+@media screen and (max-width:1680px) {
+.container{
+	width: 1300px;
+}
+}
+@media screen and (max-width:1440px) {
+.container{
+	width: 1200px;
+}
+}
+
+
+
