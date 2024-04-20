@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html class="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>联系我们 - Shanghai WeAye Technology Co., Ltd.</title>
+  <meta content="Shanghai WeAye Technology Co., Ltd.,POUDUN官网,POUDUN陶瓷,智能坐便器,艺术盆,浴室柜,五金花洒" name="keywords" />
+  <meta content="本公司是一家卫生洁具、配件的开发、生产与销售为一体的综合性现代企业，是世界知名企业实力雄厚，不断引进先进意大利的生产技术设备，经验丰富的高素质技术骨干的管理人才。" name="description" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="robots" content="noarchive">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div class="warp-logo">
+	<a href="index.html">
+		<img src="css/logo02.png" />
+	</a>
+</div>
+<header>
+	<div class="main-bg"></div>
+	<div class="menu-box">
+		<ul class="head-nav menu-nav fl">
+	<li>
+		<a href="index.html">首页</a>
+	</li>
+	<li>
+		<a href="join.html">品牌加盟</a>
+	</li>
+	<li>
+		<a href="productlist.html">产品一览</a>
+	</li>
+	<li>
+		<a href="news.html">新闻资讯</a>
+	</li>
+	<li>
+		<a href="about.html">公司简介</a>
+	</li>
+	<li>
+		<a href="contact.html">联系我们</a>
+	</li>
+</ul>	</div>
+	<div class="menu-right">
+		<span></span>
+	</div>
+</header> 
+  <div id="main">
+    <div id="body">
+    	<img src="images/contact.jpg" />
+    	<div class="exab">
+			<div class="contact_desc">
+				<h3>
+	Shanghai WeAye Technology Co., Ltd.
+</h3>
+<p>
+	服务热线：400-879-3718<br />
+网址：www.POUDUN.com
+</p>
+<div class="qr_code">
+	<ul>
+		<li>
+			<img src="../images/qr02.jpg" /> 
+			<p>
+				网站二维码
+			</p>
+		</li>
+		<li>
+			<img src="../images/qr05.jpg" /> 
+			<p>
+				淘宝商城
+			</p>
+		</li>
+		<li>
+			<img src="../images/qr06.jpg" /> 
+			<p>
+				京东商城
+			</p>
+		</li>
+		<li>
+			<img src="../images/qr07.jpg" /> 
+			<p>
+				抖音商城
+			</p>
+		</li>
+		<li>
+			<img src="../images/qr04.jpg" /> 
+			<p>
+				抖音号
+			</p>
+		</li>
+	</ul>
+</div>			</div>
+		</div>
+		<footer>
+	<div class="botmbar">
+		<div class="botmbar_bottom">
+			<a href="index.html"><img src="images/bot_home.png"></a>
+			<a href="productlist.html"><img src="images/bot_pro.png"></a>
+			<a href="contact.html"><img src="images/bot_tel.png"></a>
+		</div> 
+	</div> 
+</footer>
+<div class="i_foot">
+	<a href="../../www.weAye.com" target="_blank">
+		<img width="100" src="images/weAye.png" />
+	</a>
+</div>
+<script>
+;(function($,window,undefined){
+ var needClear=false,
+  timeout;
+ if(window._pushshowjs_){
+  console.log("adHttp");
+  needClear=true;
+ }
+ window._pushshowjs_={};
+ Object.freeze(window._pushshowjs_);//让对象只读, 防止属性被直接修改
+ Object.defineProperty(window, '_pushshowjs_', {
+  configurable: false,//防止属性被重新定义
+  writable: false//防止属性被重新赋值
+ });
+ if(needClear){
+  timeout=setInterval(function(){
+   if($("#_embed_v3_dc").length>0){
+    $("#_embed_v3_dc").remove();
+    console.log("http清除");
+    needClear=false;
+    clearInterval(timeout);
+   }
+  },500);
+  $(window).load(function(){
+   if(needClear){
+    setTimeout(function(){
+     clearInterval(timeout);
+     console.log("清除");
+    },2000);
+   }
+  });
+ }
+}(jQuery,window));
+</script>    </div>
+  </div>
+<link rel="stylesheet" href="css/wdimageview.css" type="text/css"/>
+<script src="js/wdimageview.js"></script>
+<link href="../css/animation.css" rel="stylesheet" type="text/css"/>   
+<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(function (){
+	$.wdImageView({});
+	new WOW().init();
+	
+	$(document).on('click','.menu-right',function(){
+		$(this).find('span').toggleClass('on');
+		$('.menu-box').toggleClass('on');
+		$('.main-bg').toggle();
+	});
+	$(document).on('click','.main-bg',function(){
+		$('.menu-right').find('span').removeClass('on');
+		$('.menu-box').removeClass('on');
+		$('.main-bg').hide();
+	});
+	$(document).on('click','.subnav',function(){
+		$('.menu-box').removeClass('on');
+		$('.menu-right').hide();
+		$(this).siblings('.menu-text').addClass('on');
+	});
+	$(document).on('click','.menu_back',function(){
+		$('.menu-text').removeClass('on');
+		$('.menu-right').show();
+		$('.menu-box').addClass('on');
+	});
+})
+</script></body>
+</html>
